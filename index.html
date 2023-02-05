@@ -4,6 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>池塘的灵堂</title>
     <meta name="description" content="池塘先生的灵堂">
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css" />
 </head>
 
 <body>
@@ -26,6 +27,16 @@
         <img alt="" src="https://cos.zyglq.cn/blog/20230205204010.png" align="middle">
         <br><br>
         感谢 <a href="https://t.me/XiaochuanSun258">KiteAB</a> 先生的悼文
+        <br><br>在线悼念<br>
+        <div id="waline"></div>
+        <script type="module">
+            import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+            init({
+                el: '#waline',
+                serverURL: 'https://comment.zyglq.cn/',
+            });
+        </script>
     </div>
 </body>
 
